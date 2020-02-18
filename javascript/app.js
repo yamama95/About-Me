@@ -1,66 +1,66 @@
 'use strict';
 var userName = prompt('do you know me ? ').toLowerCase();
 
-if (userName === 'yes')
+if (userName === 'yes' || userName === 'y' )
 {
   alert('welcome!!');
-} else if (userName === 'no'){
+} else if (userName === 'no' || userName === 'n'){
   alert('my name is yamama i am a software developer');
-} else if(userName !== 'yes' || userName !== 'no'){
-  alert('please answer yes or no');
+} else {
+  alert('please answer yes/y or no/n ');
 }
-console.log(userName);
+// console.log(userName);
 
 
 
 
-var hobby = prompt('Do you know my hobby?');
+var hobby = prompt('Do you know my hobby?').toLowerCase();
 
-if (hobby === 'yes')
+if (hobby === 'yes' || hobby === 'y')
 {
   alert('coo00ol!!');
-} else if (hobby === 'no'){
+} else if (hobby === 'no'|| hobby === 'n'){
   alert('my hobby is drawing!');
-}else if(hobby !== 'yes' || hobby !== 'no'){
-  alert('please answer yes or no');
+}else {
+  alert('please answer yes/y or no/n ');
 }
 
-console.log( hobby);
+//console.log( hobby);
 
-var webSite = prompt('do you know what is my website about?');
-if (webSite === 'yes')
+var webSite = prompt('do you know what is my website about?').toLowerCase();
+if (webSite === 'yes'|| webSite === 'y' )
 {
   alert('Great!!');
-} else if (webSite === 'no'){
+} else if (webSite === 'no'|| webSite === 'n' ){
   alert('my website about video games');
-}else if(webSite !== 'yes' || webSite !== 'no') {
-  alert('please answer yes or no');
+}else {
+  alert('please answer yes/y or no/n ');
 }
-console.log( webSite );
+//console.log( webSite );
 
 
-var question = prompt('are you intersted to my website?');
-if (question === 'yes')
+var question = prompt('are you intersted to my website?').toLowerCase();
+if (question === 'yes' || question === 'y' )
 {
   alert('Great!!');
-} else if (question === 'no'){
+} else if (question === 'no'|| question === 'n' ){
   alert('my website about video games');
 }
-else if(question !== 'yes' || question !== 'no'){
-  alert ( 'please answer yes or no');
+else {
+  alert('please answer yes/y or no/n ');
 }
-console.log( question );
+//console.log( question );
 
 
 
-var inqury = prompt('have you visited my website before?');
-if (inqury === 'yes')
+var inqury = prompt('have you visited my website before?').toLowerCase();
+if (inqury === 'yes' || inqury === 'y')
 {
   alert('Great!!');
-} else if (inqury === 'no'){
+} else if (inqury === 'no' || inqury === 'n'){
   alert('you are welcome to my website');
-}else if (inqury !== 'yes' || inqury !== 'no'){
-  alert ('please answer yes or no');
+}else {
+  alert('please answer yes/y or no/n ');
 }
 
-console.log(inqury);
+//console.log(inqury);
