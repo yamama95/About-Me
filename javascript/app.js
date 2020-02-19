@@ -1,6 +1,6 @@
 'use strict';
 var score =0;
-var userName = prompt('do you know me ? ').toLowerCase();
+var userName  = function() { prompt('do you know me ? ').toLowerCase();
 
 if (userName === 'yes' || userName === 'y' )
 {
@@ -10,13 +10,14 @@ if (userName === 'yes' || userName === 'y' )
   alert('my name is yamama i am a software developer');
 } else {
   alert('please answer yes/y or no/n ');
-}
+} };
+userName();
 // console.log(userName);
 
 
 
 
-var hobby = prompt('Do you know my hobby?').toLowerCase();
+var hobby = function () {prompt('Do you know my hobby?').toLowerCase();
 
 if (hobby === 'yes' || hobby === 'y')
 {
@@ -27,10 +28,10 @@ if (hobby === 'yes' || hobby === 'y')
 }else {
   alert('please answer yes/y or no/n ');
 }
-
+}; hobby();
 //console.log( hobby);
 
-var webSite = prompt('do you know what is my website about?').toLowerCase();
+var webSite = function (){ prompt('do you know what is my website about?').toLowerCase();
 if (webSite === 'yes'|| webSite === 'y' )
 {
   alert('Great!!');
@@ -39,11 +40,12 @@ if (webSite === 'yes'|| webSite === 'y' )
   alert('my website about video games');
 }else {
   alert('please answer yes/y or no/n ');
-}
+} };
+webSite();
 //console.log( webSite );
 
 
-var question = prompt('are you intersted to my website?').toLowerCase();
+var question = function () { prompt('are you intersted to my website?').toLowerCase();
 if (question === 'yes' || question === 'y' )
 {
   alert('Great!!');
@@ -53,12 +55,13 @@ if (question === 'yes' || question === 'y' )
 }
 else {
   alert('please answer yes/y or no/n ');
-}
+} };
+question();
 //console.log( question );
 
 
 
-var inqury = prompt('have you visited my website before?').toLowerCase();
+var inqury = function() { prompt('have you visited my website before?').toLowerCase();
 if (inqury === 'yes' || inqury === 'y')
 {
   alert('Great!!');
@@ -67,13 +70,14 @@ if (inqury === 'yes' || inqury === 'y')
   alert('you are welcome to my website');
 }else {
   alert('please answer yes/y or no/n ');
-}
+} };
+inqury();
 
 //console.log(inqury);
 
-
+var age = function(){
 for(var i=0 ; i <=3 ; i++){
-  var age = prompt('guess what my age ?!');
+  prompt('guess what my age ?!');
   age = Number(age);
   if (age === 25 )
   {
@@ -85,9 +89,10 @@ for(var i=0 ; i <=3 ; i++){
   if (age >=30 ){ alert( 'too high');}
   if (age <29 && age >25 ){ alert( 'high');}
   if (age >21 && age <25 ){ alert( 'law');}
-}
+} };
+age();
 
-var favKind= ['action' , 'comedy' , 'horror' , 'adventure' ,'romance'];
+var favKind= function() { ['action' , 'comedy' , 'horror' , 'adventure' ,'romance'];
 var myFav = prompt ( ' Guess whats my favourite kind of films?');
 var attempts = 0;
 for( var j =0 ; j <=5 ; j++) {
@@ -109,6 +114,7 @@ for( var j =0 ; j <=5 ; j++) {
 
   else {
     break;
-  }}
+  }} };
+  favKind();
 document.write(score);
 document.write(favKind);
