@@ -64,7 +64,7 @@ function Q1(){
   }
 }
 Q1();
-//console.log( question );
+//console.log( question );ggg
 
 
 function I1(){
@@ -99,8 +99,8 @@ function A1(){
     if (age >=22 && age <24 ){ alert( 'law');}
     if (age <=27 && age >24 ){ alert( 'high');}
     if (age >27 && age <30 ){ alert( 'too high');}
-    if ( age <20 ){ alert( 'too too law');}
-    if (age >30 ){ alert( 'too too high');}
+    if ( age =<20 ){ alert( 'too too law');}
+    if (age =>30 ){ alert( 'too too high');}
   }}
 A1();
 
